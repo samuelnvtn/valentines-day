@@ -1,70 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>For My GF</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://samuelnvtn.github.io/valentines-day/images/favicon.png"
-    />
-    <link rel="stylesheet" href="style2.css" />
-  </head>
-  <body>
-    <div class="section">
-      <div class="container">
-        <form class="food">
-          <label for="">What we eatin?</label>
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Sushi</p>
-            <input type="checkbox" />
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>For My GF</title>
+        <link rel="icon" type="image/x-icon" href="https://samuelnvtn.github.io/valentines-day/images/favicon.png" />
+        <link rel="stylesheet" href="style2.css" />
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="section">
+            <div class="container">
+                <form class="valentine">
+                    <label for="">What we eatin?</label>
+                    <div class="food-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                        <p>Sushi</p>
+                        <input class="sushi" type="checkbox" />
+                    </div>
 
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Noodles</p>
-            <input type="checkbox" />
-          </div>
-
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Kebab</p>
-            <input type="checkbox" />
-          </div>
-
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Burger</p>
-            <input type="checkbox" />
-          </div>
-
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Pizza</p>
-            <input type="checkbox" />
-          </div>
-
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Salad</p>
-            <input type="checkbox" />
-          </div>
-
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Baguette</p>
-            <input type="checkbox" />
-          </div>
-
-          <div class="food-card">
-            <img src="" alt="" />
-            <p>Other:</p>
-            <input type="text" />
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
+                    <button class="btn submit-form" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="firebase.js"></script>
+    </body>
 </html>
