@@ -40,11 +40,11 @@ p {
 button {
     color: white;
     background-color: #145a9a;
-    border-radius: 20%;
+    border-radius: 10px;
     border: 5px solid #145a9a;
     padding: 5px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 button:hover {
@@ -73,7 +73,7 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
     flex-wrap: wrap;
 }
 
