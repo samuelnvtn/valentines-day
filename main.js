@@ -34,6 +34,21 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Submit button found") // Test
 
     const sushi = document.querySelector(".sushi")
+    const bb = document.querySelector(".bile-bramburky")
+    const hb = document.querySelector(".horcicove-bramburky")
+    const mix = document.querySelector(".mix")
+    const jojo = document.querySelector(".jojo")
+    const metro = document.querySelector(".metro")
+    const suk = document.querySelector(".soja")
+    const roller = document.querySelector(".roller")
+    const pivo = document.querySelector(".pivo")
+    const vino = document.querySelector(".vino")
+    const medovina = document.querySelector(".medovina")
+    const nealko = document.querySelector(".nealko")
+    const bachelor = document.querySelector(".bachelor")
+    const vymena = document.querySelector(".vymena")
+    const film = document.querySelector(".film")
+    const cteni = document.querySelector(".cteni")
 
     submit.addEventListener("click", e => {
         e.preventDefault()
@@ -46,7 +61,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         db.collection("valentine-form")
             .add({
-                sushi: sushi.checked ? "yes" : "no"
+                sushi: sushi.checked ? "yes" : "no",
+                bb: bb.checked ? "yes" : "no",
+                hb: hb.checked ? "yes" : "no",
+                mix: mix.checked ? "yes" : "no",
+                jojo: jojo.checked ? "yes" : "no",
+                metro: metro.checked ? "yes" : "no",
+                suk: suk.checked ? "yes" : "no",
+                roller: roller.checked ? "yes" : "no",
+                pivo: pivo.checked ? "yes" : "no",
+                vino: vino.checked ? "yes" : "no",
+                medovina: medovina.checked ? "yes" : "no",
+                nealko: nealko.checked ? "yes" : "no",
+                bachelor: bachelor.checked ? "yes" : "no",
+                vymena: vymena.checked ? "yes" : "no",
+                film: film.checked ? "yes" : "no",
+                cteni: cteni.checked ? "yes" : "no"
             })
             .then(() => {
                 console.log("Data saved to Firestore")
