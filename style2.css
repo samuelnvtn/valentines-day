@@ -69,6 +69,14 @@ button:hover {
     flex-wrap: wrap;
 }
 
+.section3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 60vh;
+    flex-wrap: wrap;
+}
+
 .container {
     width: 80%;
     height: 100%;
@@ -117,7 +125,8 @@ button:hover {
 
 @media (max-width: 768px) {
     .section,
-    .section2 {
+    .section2,
+    .section3 {
         min-height: auto;
         padding: 20px 0;
     }
