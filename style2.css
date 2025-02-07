@@ -124,6 +124,20 @@ button:hover {
     margin-left: 10px;
 }
 
+.input-text {
+    display: flex;
+    justify-content: center;
+}
+
+.input-text-class {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
 @media (max-width: 1000px) {
     .form-content {
         display: grid;

@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const vymena = document.querySelector(".vymena")
     const film = document.querySelector(".film")
     const cteni = document.querySelector(".cteni")
+    const dalsi = document.querySelector(".input-text-class")
 
     submit.addEventListener("click", e => {
         e.preventDefault()
@@ -76,7 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 bachelor: bachelor.checked ? "yes" : "no",
                 vymena: vymena.checked ? "yes" : "no",
                 film: film.checked ? "yes" : "no",
-                cteni: cteni.checked ? "yes" : "no"
+                cteni: cteni.checked ? "yes" : "no",
+                dalsi: dalsi.value
             })
             .then(() => {
                 console.log("Data saved to Firestore")
