@@ -83,6 +83,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     margin: auto;
+    align-items: center;
 }
 
 .title {
@@ -123,7 +124,31 @@ button:hover {
     margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+    .form-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    img {
+        height: 150px;
+        width: 150px;
+        border-radius: 20%;
+        border: 5px solid #145a9a;
+        object-fit: cover;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+    .desc p {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 860px) {
     .section,
     .section2,
     .section3 {
