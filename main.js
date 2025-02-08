@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 film: film.checked ? "yes" : "no",
                 cteni: cteni.checked ? "yes" : "no",
                 dalsi: dalsi.value,
-                datum: datum.value
+                datum: new Date()
             })
             .then(() => {
                 console.log("Data saved to Firestore")
